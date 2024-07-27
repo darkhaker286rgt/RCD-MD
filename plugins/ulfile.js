@@ -10,7 +10,7 @@ const Config = require("../config");
 
 smd(
   {
-    pattern: "upload",
+    pattern: "download",
     desc: "Download and send back a file from a received WhatsApp message link",
     react: "📁",
     category: "user",
