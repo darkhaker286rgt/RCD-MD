@@ -6,46 +6,69 @@ let {
    smdBuffer,
  } = require("../lib");
 const axios = require("axios");
+const fs = require("fs");
+const path = require("path");
 const Config = require("../config");
+const { MessageType } = require('@whiskeysockets/baileys'); // or the library you use for WhatsApp API
 
 smd(
   {
-    pattern: "download",
-    desc: "Download and send back a file from a received WhatsApp message link",
-    react: "📁",
+    pattern: "downloadAndUpload",
+    desc: "Download a file from a link and upload to WhatsApp",
+    react: "📥",
     category: "user",
     filename: __filename,
   },
-  async (message) => {
+  async (message, { args }) => {
+    if (!args[0]) {
+      return message.reply("Please provide a direct file link.");
+    }
+
+    const fileUrl = args[0];
+    const fileName = path.basename(fileUrl);
+    const filePath = path.join(__dirname, fileName);
+
     try {
-      // Get the message content
-      const msgText = message.message?.extendedTextMessage?.text || message.message?.conversation;
+      // Download the file
+      const response = await axios({
+        url: fileUrl,
+        method: 'GET',
+        responseType: 'stream',
+      });
 
-      // Extract URL from the message text
-      const urlPattern = /(https?:\/\/[^\s]+)/g;
-      const urls = msgText.match(urlPattern);
+      const writer = fs.createWriteStream(filePath);
+      response.data.pipe(writer);
 
-      if (!urls || urls.length === 0) {
-        await message.send("No valid URL found in the message.");
-        return;
-      }
+      writer.on('finish', async () => {
+        console.log('File downloaded successfully.');
 
-      const fileUrl = urls[0];
+        // Upload the file to WhatsApp
+        try {
+          await message.client.sendMessage(
+            message.from,
+            fs.readFileSync(filePath),
+            MessageType.document, // Use appropriate type based on file
+            { caption: 'Here is the file you requested.' }
+          );
+          console.log('File uploaded successfully.');
+        } catch (uploadError) {
+          console.error('Error uploading file:', uploadError);
+          message.reply('Failed to upload the file.');
+        } finally {
+          // Clean up the file after upload
+          fs.unlink(filePath, (err) => {
+            if (err) console.error('Error deleting file:', err);
+          });
+        }
+      });
 
-      // Download the file using axios
-      const response = await axios.get(fileUrl, { responseType: 'arraybuffer' });
-      const buffer = Buffer.from(response.data, 'binary');
-      
-      // Get file name from the URL
-      const urlParts = fileUrl.split('/');
-      const fileName = urlParts[urlParts.length - 1];
-
-      // Send the file back to WhatsApp
-      await message.send(buffer, { filename: fileName, mimetype: response.headers['content-type'] });
-
+      writer.on('error', (error) => {
+        console.error('Error downloading file:', error);
+        message.reply('Failed to download the file.');
+      });
     } catch (error) {
-      console.error(error);
-      await message.send("An error occurred while processing the request.");
+      console.error('Error:', error);
+      message.reply('An error occurred.');
     }
   }
 );
