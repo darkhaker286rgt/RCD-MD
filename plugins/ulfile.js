@@ -28,6 +28,9 @@ smd(
     const fileName = path.basename(fileUrl);
     const filePath = path.join(__dirname, fileName);
 
+    message.reply(`Downloading file from: ${fileUrl}`);
+    console.log(`Saving file to: ${filePath}`);
+
     try {
       // Download the file
       const response = await axios({
@@ -58,6 +61,7 @@ smd(
           // Clean up the file after upload
           fs.unlink(filePath, (err) => {
             if (err) console.error('Error deleting file:', err);
+            else console.log('File deleted successfully.');
           });
         }
       });
