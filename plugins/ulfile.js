@@ -13,7 +13,7 @@ const { MessageType } = require('@whiskeysockets/baileys'); // or the library yo
 
 smd(
   {
-    pattern: "downloadAndUpload",
+    pattern: "download",
     desc: "Download a file from a link and upload to WhatsApp",
     react: "📥",
     category: "user",
