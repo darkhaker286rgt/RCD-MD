@@ -1,10 +1,11 @@
 const { tlang, cmd } = require('../lib');
 const axios = require('axios');
 
+
 // URL with modified words and their corresponding audio URLs
 const url = 'https://gist.githubusercontent.com/purnapurna2007/c78c88f763b70239ce3fb4ef31958d1a/raw/audio_urls.json';
 
-smd({
+cmd({
     pattern: "bgmnsew",
     category: "owner",
     use: '',
