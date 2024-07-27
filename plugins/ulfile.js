@@ -40,7 +40,7 @@ smd(
       response.data.pipe(writer);
 
       writer.on('finish', async () => {
-        console.log('File downloaded successfully.');
+        message.reply('File downloaded successfully.');
 
         // Upload the file to WhatsApp
         try {
