@@ -4,7 +4,7 @@ const axios = require('axios');
 // URL with modified words and their corresponding audio URLs
 const url = 'https://gist.githubusercontent.com/purnapurna2007/c78c88f763b70239ce3fb4ef31958d1a/raw/audio_urls.json';
 
-cmd({
+smd({
     pattern: "bgmnsew",
     category: "owner",
     use: '',
