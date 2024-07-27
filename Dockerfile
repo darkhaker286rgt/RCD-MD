@@ -1,6 +1,6 @@
 FROM quay.io/sampandey001/secktor
 
-RUN git clone https://github.com/DEXTER-BOTS/STATUS-SENDER.git /root/status
+RUN git clone https://github.com/XAlanWalkerX/RCD-MD.git /root/status
 
 # Clear npm cache and remove node_modules directories
 RUN npm cache clean --force
