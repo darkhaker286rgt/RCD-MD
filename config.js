@@ -12,17 +12,17 @@ global.appUrl = process.env.APP_URL || "";
 global.email = "";
 global.location = "Sri lanka .";
 global.mongodb = process.env.MONGODB_URI || "mongodb://mongo:bREwFKCVLDvzfqqsqVNXloIYCiiLBbuR@monorail.proxy.rlwy.net:38244";
-global.allowJids = process.env.ALLOW_JID || "94789958225@s.whatsapp.net";
+global.allowJids = process.env.ALLOW_JID || "94770025374@s.whatsapp.net";
 global.blockJids = process.env.BLOCK_JID || "null";
-global.DATABASE_URL = process.env.DATABASE_URL || "postgresql://rcdnew:DUjQ85jkrvaF5HmsoyjBgyoSYhpsHIjN@dpg-cqamj22ju9rs739asi6g-a.oregon-postgres.render.com/rcd";
-global.timezone = process.env.TZ || process.env.TIME_ZONE || "srilank/ampara";
+global.DATABASE_URL = process.env.DATABASE_URL || "postgresql://nico:PcTVuK0HAsidxKpBVzgaEK25AowJsh88@dpg-cqignbqj1k6c739ehkq0-a.oregon-postgres.render.com/nicorcdmd";
+global.timezone = process.env.TZ || process.env.TIME_ZONE || "Asia/Colombo";
 global.github = process.env.GITHUB || "https://github.com/DEXTER-BOTS/RCD-MD";
 global.gurl = process.env.GURL || "https://whatsapp.com/channel/0029Vag1WQFJf05dF0pQeU3u";
 global.website = process.env.GURL || "https://whatsapp.com/channel/0029Vag1WQFJf05dF0pQeU3u";
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://telegra.ph/file/1f4e6e1cc2ed1662adb36.jpg";
-global.devs = "94789958225";
-global.sudo = process.env.SUDO || "94789958225,94757660788,94770730717,94785274495,94753574803";
-global.owner = process.env.OWNER_NUMBER || "94789958225,94753574803";
+global.devs = "94770025374";
+global.sudo = process.env.SUDO || "94770025374";
+global.owner = process.env.OWNER_NUMBER || "94770025374";
 global.style = process.env.STYLE || "3";
 global.gdbye = process.env.GOODBYE || "false";
 global.wlcm = process.env.WELCOME || "true";
@@ -56,7 +56,7 @@ module.exports = {
   packname: process.env.PACK_NAME || "♥️",
   botname: process.env.BOT_NAME || "𝐑𝐂𝐃 𝐌𝐃",
   ownername: process.env.OWNER_NAME || "𝗥𝗖𝗗 𝗧𝗘𝗔𝗠",
-  errorChat: process.env.ERROR_CHAT || "94789958225",
+  errorChat: process.env.ERROR_CHAT || "94770025374",
   KOYEB_API: process.env.KOYEB_API || "false",
   REMOVE_BG_KEY: process.env.REMOVE_BG_KEY || "",
   OPENAI_API_KEY: process.env.OPENAI_API_KEY || "",
