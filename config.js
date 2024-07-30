@@ -12,7 +12,8 @@ global.location = "Sri lanka .";
 global.mongodb = process.env.MONGODB_URI || "mongodb://mongo:eRVHREMpcCuPjDxgVqMHSwYCvtKdnuPb@viaduct.proxy.rlwy.net:59234";
 global.allowJids = process.env.ALLOW_JID || "94770025374@s.whatsapp.net";
 global.blockJids = process.env.BLOCK_JID || "null";
-global.DATABASE_URL = process.env.DATABASE_URL || "postgresql://nico:PcTVuK0HAsidxKpBVzgaEK25AowJsh88@dpg-cqignbqj1k6c739ehkq0-a.oregon-postgres.render.com/nicorcdmd";
+global.DATABASE_URL = process.env.DATABASE_URL || "postgresql://postgres:LozJtPYkuOQnoIyEOBnVzAllhvwxmyAV@viaduct.proxy.rlwy.net:59443/railway";
+// postgresql://nico:PcTVuK0HAsidxKpBVzgaEK25AowJsh88@dpg-cqignbqj1k6c739ehkq0-a.oregon-postgres.render.com/nicorcdmd
 global.timezone = process.env.TZ || process.env.TIME_ZONE || "Asia/Colombo";
 global.github = process.env.GITHUB || "https://github.com/XAlanWalkerX/RCD-MD";
 global.gurl = process.env.GURL || "https://whatsapp.com/channel/0029Vag1WQFJf05dF0pQeU3u";
