@@ -49,6 +49,25 @@ smd(
   }
 );
 
+smd(
+  {
+    pattern: "sysd",
+    desc: M,
+    react: "💻",
+    category: "misc",
+    filename: __filename,
+  },
+  async (message) => {
+    const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
+    const contextInfo = {
+      forwardingScore: 999,
+      isForwarded: true,
+    };
+
+    await message.send('' + child + '', { contextInfo });
+  }
+);
+
  smd(
   {
     pattern: "channel",
