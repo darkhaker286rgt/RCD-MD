@@ -13,7 +13,7 @@ let {
  const cheerio = require("cheerio");
  const M = "It Sends version";
 
- smd({pattern: "version",
+ /*smd({pattern: "version",
      desc: M,
      react: "✅",
      category: "misc",
@@ -27,7 +27,27 @@ let {
     var i = Math.floor(2*Math.random())
 
     await message.send(message.jid,(r_text[i]), MessageType.text);
-     });
+     });+*/
+
+smd(
+  {
+    pattern: "version",
+    desc: M,
+    react: "✅",
+    category: "misc",
+    filename: __filename,
+  },
+  async (message) => {
+    const channelMessage = `RCD-MD Version 🧬\n\nInstalled version 🔗:\n1.0.1v - Beta Edition (By NICO)\n\nCheck official github : https://github.com/SLTechnicalTips/`;
+
+    const contextInfo = {
+      forwardingScore: 999,
+      isForwarded: true,
+    };
+
+    await message.send(channelMessage, { contextInfo });
+  }
+);
 
  smd(
   {
