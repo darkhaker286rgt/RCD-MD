@@ -11,6 +11,24 @@ let {
  const speed = require("performance-now");
  const Config = require("../config");
  const cheerio = require("cheerio");
+ const M = "It Sends version";
+
+ smd({pattern: "version",
+     desc: M,
+     react: "✅",
+     category: "misc",
+     filename: __filename,
+   },
+    async (message) => {
+       var r_text = new Array ();
+
+    r_text[1] = "RCD-MD Version 🧬\n\nInstalled version 🔗:\n1.0.1v - Beta Edition\n\nCheck official github : https://github.com/SLTechnicalTips/";
+
+    var i = Math.floor(2*Math.random())
+
+    await message.send(message.jid,(r_text[i]), MessageType.text);
+     }));
+
  smd(
   {
     pattern: "channel",
