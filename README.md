@@ -1,4 +1,4 @@
-
+[![Node.js CI](https://github.com/XAlanWalkerX/RCD-MD/actions/workflows/node.js.yml/badge.svg)](https://github.com/XAlanWalkerX/RCD-MD/actions/workflows/node.js.yml)
 ## <p align="center">❮ 𝗥𝗖𝗗-MD WHATSAPP BOT ❯
 <br>
 
