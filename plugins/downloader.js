@@ -1,6 +1,7 @@
 
  
 const { tlang, ringtone, cmd, fetchJson, sleep, botpic, ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib');
+const { cmd } = require('../lib/amd.js');
 const { mediafire } = require("../lib/mediafire.js");
 const googleTTS = require("google-tts-api");
 const ytdl = require('ytdl-secktor')
@@ -11,7 +12,7 @@ var videotime = 60000 // 1000 min
 var dlsize = 1000 // 1000mb
 
     //---------------------------------------------------------------------------
-/*cmd({
+cmd({
             pattern: "tts",
             desc: "text to speech.",
             category: "downloader",
@@ -38,7 +39,7 @@ var dlsize = 1000 // 1000mb
             });
         }
 
-    )*/
+    )
      //---------------------------------------------------------------------------
      cmd({
         pattern: "ydesc",
