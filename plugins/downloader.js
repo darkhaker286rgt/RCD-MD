@@ -1,6 +1,7 @@
 
  
-const { tlang, ringtone, cmd, fetchJson, sleep, botpic, ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib');
+const { tlang, ringtone, fetchJson, sleep, botpic, ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib');
+const cmd = require('../lib/plugins.js');
 const { mediafire } = require("../lib/mediafire.js");
 const googleTTS = require("google-tts-api");
 const ytdl = require('ytdl-secktor')
