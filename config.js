@@ -49,7 +49,7 @@ module.exports = {
   menu: process.env.MENU || "",
   HANDLERS: process.env.PREFIX || ".",
   BRANCH: process.env.BRANCH || "main",
-  VERSION: process.env.VERSION || "1.0.0",
+  VERSION: process.env.VERSION || "1.0.1 Beta (By NICO)",
   caption: process.env.CAPTION || "𝗥𝗖𝗗 𝗠𝗗 𝗣𝗢𝗪𝗘𝗥 𝗕𝗬 🇱🇰",
   author: process.env.PACK_AUTHER || "NICO",
   packname: process.env.PACK_NAME || "♥️",
