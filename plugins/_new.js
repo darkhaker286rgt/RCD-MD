@@ -13,7 +13,7 @@ let {
  const cheerio = require("cheerio");
  const M = "It Sends version";
  const S = "Shows about the system";
-
+ 
 smd(
   {
     pattern: "version",
