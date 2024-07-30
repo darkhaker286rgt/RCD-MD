@@ -1,4 +1,4 @@
-name: Node.js CI
+name: RCD-MD
 
 on:
   push:
@@ -26,8 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Install dependencies
+    - name: Deploying Application
       run: npm install
 
-    - name: Start application
+    - name: BOT Running
       run: npm start
