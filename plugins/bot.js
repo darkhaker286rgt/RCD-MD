@@ -117,7 +117,7 @@ try {
   });
 } catch (_0x2568c0) {
   if (!global.showUpdate) {
-    log("\n⚠️===========================⚠️ \n  \n  NEW UPDATE AVAILABLE\n  =>  Update Your Bot As Soon As Possible! 🚫\n \n Regards: NICO\n\n Currently the bot is working ✅\n⚠️============================⚠️");
+    log("\n⚠️===========================⚠️ \n  \n  NEW UPDATE AVAILABLE \n \n Regards: NICO  \n  \n  Currently the bot is working ✅  \n  \n  ⚠️============================⚠️");
     global.showUpdate = true;
   }
 }
