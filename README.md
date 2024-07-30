@@ -1,10 +1,10 @@
 [![Node.js CI](https://github.com/XAlanWalkerX/RCD-MD/actions/workflows/node.js.yml/badge.svg)](https://github.com/XAlanWalkerX/RCD-MD/actions/workflows/node.js.yml)
-## <p align="center">❮ 𝗥𝗖𝗗-MD WHATSAPP BOT ❯
+## <p align="center">❮ ALL ERRORS FIXED 𝗥𝗖𝗗-MD WHATSAPP BOT BY NICO ❯
 <br>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=800&size=28&duration=4000&pause=1000&color=FF0000&random=false&width=435&lines=WELCOME+TO+THE+𝗥𝗖𝗗-MD;MULTI-DEVICE+WHATSAPP+BOT;DEVELOPED+BY+RCD+TEAM;RELEASED+DATE+10%2F06%2F2024." alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&weight=800&size=28&duration=4000&pause=1000&color=FF0000&random=false&width=435&lines=WELCOME+TO+THE+𝗥𝗖𝗗-MD;MULTI-DEVICE+WHATSAPP+BOT;DEVELOPED+BY+RCD+TEAM+AND+ERRORS+FIXED+BY+NICO;RELEASED+DATE+28%2F07%2F2024." alt="Typing SVG" />
   </a>
 </p>
 
@@ -16,7 +16,7 @@
 ### Setup
 
 **📌DEPLOY ON HEROKU**
-   - ***Click [`FORK`](https://github.com/DEXTER-BOTS/RCD-MD/fork) and `Star ⭐ Repository` for Courage.***
+   - ***Click [`FORK`](https://github.com/XAlanWalkerX/RCD-MD/fork) and `Star ⭐ Repository` for Courage.***
    - You will get a session ID in WhatsApp, copy the ID only.
    - **If you don't have an account on [Heroku](https://signup.heroku.com/), [create an account now](https://signup.heroku.com/).**p
 </p>
@@ -32,7 +32,7 @@
 
 ## DEPLOY IN HEROKU
 
- [![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fpurnapurna2007%2FSend2%3Ftab%3Dreadme-ov-file&template=https://github.com/DEXTER-BOTS/STATUS-SENDER)
+ [![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fpurnapurna2007%2FSend2%3Ftab%3Dreadme-ov-file&template=https://github.com/XAlanWalkerX/RCD-MD)
  
 ##  DEPLOY RENDER
 # <a href="https://dashboard.render.com/web/new"><img title="railway" src="https://img.shields.io/badge/DEPLOY ON RENDER-h?color=red&style=for-the-badge&logo=msi"></a>
