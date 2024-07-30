@@ -50,7 +50,7 @@ smd(
       isForwarded: true,
     };
 
-    await message.send(`${child}\n\n${sys}`, { contextInfo });
+    await message.send(sys, { contextInfo });
   }
 );
 
