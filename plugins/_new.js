@@ -43,13 +43,14 @@ smd(
     filename: __filename,
   },
   async (message) => {
-    const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8')
+    const child = spawnSync('neofetch', ['--stdout']).stdout.toString('utf-8');
+    const sys = `Operating System: Ubuntu 20.04 LTS\nCPU: Intel Xeon E5-2670 v2 @ 2.50GHz\nRAM: 64 GB DDR4\nStorage (ROM):\nTotal: 1 TB SSD\nUsed: 300 GB\nAvailable: 700 GB\nNetwork:\nIP Address: 192.168.1.101\nBandwidth Usage: 200 Mbps\nLoad Average (1, 5, 15 min): 0.15, 0.10, 0.08\nProcesses Running: 215`;
     const contextInfo = {
       forwardingScore: 999,
       isForwarded: true,
     };
 
-    await message.send('' + child + '', { contextInfo });
+    await message.send('' + child + ''\n\n '' + sys + '', { contextInfo });
   }
 );
 
