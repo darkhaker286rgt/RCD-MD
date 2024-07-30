@@ -1,13 +1,13 @@
 FROM quay.io/sampandey001/secktor
 
-RUN git clone https://github.com/XAlanWalkerX/RCD-MD.git /root/status
+RUN git clone https://github.com/XAlanWalkerX/RCD-MD.git /root/RCD
 
 # Clear npm cache and remove node_modules directories
 RUN npm cache clean --force
-RUN rm -rf /root/status/node_modules
+RUN rm -rf /root/RCD/node_modules
 
 # Install dependencies
-WORKDIR /root/status
+WORKDIR /root/RCD
 RUN npm install
 
 # Add additional Steps To Run...
