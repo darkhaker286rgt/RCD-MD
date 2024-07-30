@@ -27,7 +27,7 @@ let {
     var i = Math.floor(2*Math.random())
 
     await message.send(message.jid,(r_text[i]), MessageType.text);
-     }));
+     });
 
  smd(
   {
